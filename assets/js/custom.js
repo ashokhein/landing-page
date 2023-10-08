@@ -122,16 +122,17 @@ jQuery(document).ready(function($){
         },
         480:{
             items:2
-        },
-        800:{
-            items:3
-        },
-        1000:{
-            items:4
-        },
-        1400:{
-            items:5
         }
+        // ,
+        // 800:{
+        //     items:3
+        // },
+        // 1000:{
+        //     items:4
+        // },
+        // 1400:{
+        //     items:5
+        // }
       }
     })
   }) ;

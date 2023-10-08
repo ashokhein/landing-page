@@ -1,9 +1,10 @@
 jQuery(document).ready(function(){
   jQuery('#contact-form').on('submit',function(e) {  //Don't foget to change the id form
   jQuery.ajax({
-      url:'contact.php', //===PHP file name====
+      url:'https://formspree.io/f/mpzgovwr',
       data:jQuery(this).serialize(),
       type:'POST',
+      dataType: "json",     
       success:function(data){
           swal({
               title: "Thank You!",
@@ -11,12 +12,9 @@ jQuery(document).ready(function(){
               icon: "success",
              timer: 3000
            }).then(function() {
-            jQuery('#contact-form')[0].reset();
-                   });
-        
+            jQuery('#contact-form')[0].reset();});        
       },
       error:function(data){
-
          swal({
               title: "Oops...",
               text: "Something went wrong :(",
